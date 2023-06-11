@@ -1,0 +1,70 @@
+<!-- <p>add works!</p> -->
+<!-- <p>insert works!</p> -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h3>Add Data</h3>
+                </div>
+                 <form>
+                    <div class="mb-3">
+                        <label>AND OR</label>
+                        <input type="text" [(ngModel)]="formData.andor" name="andor" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="">Field Name</label>
+                        <input type="text" [(ngModel)]="formData.fieldname" name="fieldname" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="">Condition</label>
+                        <input type="text" [(ngModel)]="formData.condition" name="condition" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="">Value</label>
+                        <input type="text" [(ngModel)]="formData.value" name="value" class="form-control">
+                    </div>
+                    
+                    <div class="d-grid gap-2">
+                       <a routerLink="/table"><button (click)="funAdd()" class="btn btn-outline-primary">Add</button> </a>
+                    </div>
+                </form>
+
+                <!-- <table class="table table-striped" >
+                    <tr>
+                        <th>AND OR</th>
+                        <th>Field Name</th>
+                        <th>Condition</th>
+                        <th>Value</th>
+                        <th>Action</th>
+                    </tr>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td>
+                                <select>
+                                    <option value="">AND</option>
+                                    <option value="">OR</option>
+                                </select>
+                            </td>
+                            <td>
+                                
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-outline-primary">Edit</button> &nbsp;
+                                 <button class="btn btn-outline-danger">Delete</button>
+                             </td>
+                        </tr>
+                    </tbody>    
+                </table> -->
+            </div>
+        </div>
+    </div>    
+</div>    
+
+

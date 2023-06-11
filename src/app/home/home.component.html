@@ -1,0 +1,21 @@
+<!-- <p>home works!</p> -->
+
+<div class="container">
+    <table class="table table-striped" >
+        <tr>
+            <th>ID</th>
+            <th>JSON Model</th>
+            <th>Action</th>
+        </tr>
+        <tbody class="table-group-divider">
+            <tr *ngFor="let data of allData">
+                <td>{{data.id}}</td>
+                <td>{{ allData | json}}</td>
+                <td>
+                   <a [routerLink]="['/update', data.id]"><button type="button" class="btn btn-outline-primary">Edit</button></a> &nbsp;
+                    <button (click)="deleteItem(data.id)" class="btn btn-outline-danger">Delete</button>
+                 </td>
+            </tr>
+        </tbody>    
+    </table>
+</div>
